@@ -10,7 +10,7 @@ import UIKit
 import CoreData
 
 class JobsListViewController: UITableViewController, JobsViewControllerProtocol {
-
+    
     var project: Project?
     var jobs: [Job]?
     
