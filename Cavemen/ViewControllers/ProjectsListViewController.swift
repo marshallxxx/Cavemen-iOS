@@ -10,7 +10,7 @@ import UIKit
 import CoreData
 
 class ProjectsListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate {
-
+    
     @IBOutlet weak var noProjectsLabel: UILabel!
     @IBOutlet weak var projectListTableView: UITableView!
     
@@ -20,7 +20,7 @@ class ProjectsListViewController: UIViewController, UITableViewDataSource, UITab
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         //Localization
         noProjectsLabel.text = "No projects".localized
         
@@ -30,7 +30,7 @@ class ProjectsListViewController: UIViewController, UITableViewDataSource, UITab
         request.sortDescriptors = [ sortDescriptor ]
         let appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         projectsFetchController = NSFetchedResultsController(fetchRequest: request, managedObjectContext: appDelegate.coreDataManager.managedObjectContext, sectionNameKeyPath: nil, cacheName: nil);
-
+        
         try! projectsFetchController.performFetch()
         
         // Show/Hide projectListTableView/noProjectsLabel
@@ -43,7 +43,7 @@ class ProjectsListViewController: UIViewController, UITableViewDataSource, UITab
         projectListTableView.delegate = self
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -70,7 +70,6 @@ class ProjectsListViewController: UIViewController, UITableViewDataSource, UITab
     }
     
     // MARK: - UITableViewDelegate
-
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         projectSelected = projectsFetchController.objectAtIndexPath(indexPath) as? Project
@@ -80,10 +79,9 @@ class ProjectsListViewController: UIViewController, UITableViewDataSource, UITab
     // MARK: Navigation
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-      guard let strIdentifier = segue.identifier else {
-        return
-      }
-      
+        guard let strIdentifier = segue.identifier else {
+            return
+        }
         switch strIdentifier {
         case Segues.ToJobs.rawValue:
             
@@ -99,7 +97,5 @@ class ProjectsListViewController: UIViewController, UITableViewDataSource, UITab
     }
     
     // MARK: - NSFetchedResultsControllerDelegate
-
-    
     
 }
