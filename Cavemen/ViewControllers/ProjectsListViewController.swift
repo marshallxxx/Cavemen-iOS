@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class ProjectsListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate {
+class ProjectsListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate, ScanViewControllerProtocol {
     
     @IBOutlet weak var noProjectsLabel: UILabel!
     @IBOutlet weak var projectListTableView: UITableView!
@@ -91,9 +91,25 @@ class ProjectsListViewController: UIViewController, UITableViewDataSource, UITab
             
             jobsVC.project = projectSelected
             
+        case Segues.ToScanner.rawValue:
+            
+            guard let scanVC = segue.destinationViewController as? ScanViewController else {
+                break
+            }
+            
+            scanVC.scanDelegate = self
+            
         default:
             break
         }
+    }
+    
+    // MARK: - ScanViewControllerProtocol
+    
+    func didScannedQRCode(code: String) {
+        
+        print("%@", code)
+        
     }
     
     // MARK: - NSFetchedResultsControllerDelegate

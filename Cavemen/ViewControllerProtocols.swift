@@ -12,3 +12,8 @@ protocol JobsViewControllerProtocol: class {
     var project:Project? { get set }
 }
 
+protocol ScanViewControllerProtocol: class {
+    func didScannedQRCode(code: String)
+}
+
+

@@ -15,6 +15,8 @@ extension ZBarSymbolSet: SequenceType {
 }
 
 class ScanViewController: UIViewController, UITextFieldDelegate, ZBarReaderViewDelegate {
+    
+    weak var scanDelegate:ScanViewControllerProtocol?
     @IBOutlet var reader: ZBarReaderView!
     
     override func viewDidLoad() {
@@ -22,7 +24,6 @@ class ScanViewController: UIViewController, UITextFieldDelegate, ZBarReaderViewD
         reader.readerDelegate = self
         reader.torchMode = 0
         reader.trackingColor = UIColor.blueColor()
-        reader.zoom = 0.2
         let scanner: ZBarImageScanner = reader.scanner
         scanner.setSymbology(ZBAR_I25, config: ZBAR_CFG_ENABLE, to: 0)
         reader.start()
@@ -31,17 +32,24 @@ class ScanViewController: UIViewController, UITextFieldDelegate, ZBarReaderViewD
     func readerView(readerView: ZBarReaderView!, didReadSymbols symbols: ZBarSymbolSet!, fromImage image: UIImage!) {
         for symbol in symbols {
             let resultString = NSString(string: symbol.data) as String
-            print(resultString)
-            NSUserDefaults.standardUserDefaults().setValue(resultString, forKey: "result")
+            
+            if let delegate = scanDelegate {
+                delegate.didScannedQRCode(resultString)
+            }
         }
-        readerView.hidden = true
-        self.performSelector("dismissViewController", withObject: self, afterDelay: 0.5)
+
+        reader.stop()
+        
+        weak var weakself = self
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(1 * NSEC_PER_SEC)), dispatch_get_main_queue()) { () -> Void in
+            weakself?.dismissViewControllerAnimated(true, completion: nil)
+        }
         
     }
     
-    
     func dismissViewController() {
         self .dismissViewControllerAnimated(true, completion: {})
+        reader.hidden = true
     }
     
     override func didReceiveMemoryWarning() {
@@ -49,6 +57,8 @@ class ScanViewController: UIViewController, UITextFieldDelegate, ZBarReaderViewD
         // Dispose of any resources that can be recreated.
     }
     
+    
+
 }
 
 

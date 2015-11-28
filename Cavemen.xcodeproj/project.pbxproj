@@ -130,8 +130,8 @@
 		47DBCF721C09B136006A1FF2 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				EF4187221C0A057F000DF058 /* ScanViewController.swift */,
 				4793F07E1C09D9E000CF1EE4 /* ViewControllerProtocols.swift */,
+				EF4187221C0A057F000DF058 /* ScanViewController.swift */,
 				47DBCF731C09B17B006A1FF2 /* ProjectsListViewController.swift */,
 				4793F0801C09DA5800CF1EE4 /* JobsListViewController.swift */,
 			);

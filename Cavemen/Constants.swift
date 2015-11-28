@@ -16,6 +16,7 @@ enum TableViewCells: String {
 
 enum Segues: String {
     case ToJobs = "toJobsSegue"
+    case ToScanner = "toQRScanner"
 }
 
 enum Fonts {
