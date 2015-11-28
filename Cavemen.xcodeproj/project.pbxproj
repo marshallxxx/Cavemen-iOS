@@ -26,6 +26,8 @@
 		47DBCFAD1C09C366006A1FF2 /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DBCFA71C09C366006A1FF2 /* Project.m */; };
 		47DBCFAE1C09C366006A1FF2 /* Job+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DBCFA91C09C366006A1FF2 /* Job+CoreDataProperties.m */; };
 		47DBCFAF1C09C366006A1FF2 /* Job.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DBCFAB1C09C366006A1FF2 /* Job.m */; };
+		94F0E2463E46CF2BEEC7B05C /* libPods-Cavemen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D203689A9B94F499FAFC38B /* libPods-Cavemen.a */; };
+		EF4187231C0A057F000DF058 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4187221C0A057F000DF058 /* ScanViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +57,17 @@
 		47DBCFA91C09C366006A1FF2 /* Job+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Job+CoreDataProperties.m"; path = "Models/Job+CoreDataProperties.m"; sourceTree = "<group>"; };
 		47DBCFAA1C09C366006A1FF2 /* Job.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Job.h; path = Models/Job.h; sourceTree = "<group>"; };
 		47DBCFAB1C09C366006A1FF2 /* Job.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Job.m; path = Models/Job.m; sourceTree = "<group>"; };
+		5D203689A9B94F499FAFC38B /* libPods-Cavemen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cavemen.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94B2786A732CA923E9FD655B /* Pods-Cavemen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cavemen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cavemen/Pods-Cavemen.debug.xcconfig"; sourceTree = "<group>"; };
+		A452D8E613C6E2BC4145F027 /* Pods-Cavemen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cavemen.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cavemen/Pods-Cavemen.release.xcconfig"; sourceTree = "<group>"; };
+		EF4187221C0A057F000DF058 /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		EF5D9A991C0A09930000FEA8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EF5D9A9B1C0A09970000FEA8 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		EF5D9A9D1C0A099C0000FEA8 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		EF5D9A9F1C0A09A00000FEA8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EF5D9AA11C0A09A40000FEA8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EF5D9AA31C0A09B30000FEA8 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		EF5D9AA51C0A09BE0000FEA8 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +76,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47DBCF7C1C09B49E006A1FF2 /* CoreData.framework in Frameworks */,
+				94F0E2463E46CF2BEEC7B05C /* libPods-Cavemen.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +97,7 @@
 				47DBCF7D1C09B4A2006A1FF2 /* Frameworks */,
 				47DBCF5F1C09A7FD006A1FF2 /* Cavemen */,
 				47DBCF5E1C09A7FD006A1FF2 /* Products */,
+				4A817B43FEBD6F386C499C25 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +130,7 @@
 		47DBCF721C09B136006A1FF2 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				EF4187221C0A057F000DF058 /* ScanViewController.swift */,
 				4793F07E1C09D9E000CF1EE4 /* ViewControllerProtocols.swift */,
 				47DBCF731C09B17B006A1FF2 /* ProjectsListViewController.swift */,
 				4793F0801C09DA5800CF1EE4 /* JobsListViewController.swift */,
@@ -144,7 +160,15 @@
 		47DBCF7D1C09B4A2006A1FF2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EF5D9AA51C0A09BE0000FEA8 /* libiconv.tbd */,
+				EF5D9AA31C0A09B30000FEA8 /* CoreAudio.framework */,
+				EF5D9AA11C0A09A40000FEA8 /* CoreGraphics.framework */,
+				EF5D9A9F1C0A09A00000FEA8 /* QuartzCore.framework */,
+				EF5D9A9D1C0A099C0000FEA8 /* CoreVideo.framework */,
+				EF5D9A9B1C0A09970000FEA8 /* CoreMedia.framework */,
+				EF5D9A991C0A09930000FEA8 /* AVFoundation.framework */,
 				47DBCF7B1C09B49E006A1FF2 /* CoreData.framework */,
+				5D203689A9B94F499FAFC38B /* libPods-Cavemen.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -165,6 +189,15 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		4A817B43FEBD6F386C499C25 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94B2786A732CA923E9FD655B /* Pods-Cavemen.debug.xcconfig */,
+				A452D8E613C6E2BC4145F027 /* Pods-Cavemen.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -172,9 +205,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 47DBCF6F1C09A7FD006A1FF2 /* Build configuration list for PBXNativeTarget "Cavemen" */;
 			buildPhases = (
+				A3153A1E78E70F4B70DEFA70 /* Check Pods Manifest.lock */,
 				47DBCF591C09A7FD006A1FF2 /* Sources */,
 				47DBCF5A1C09A7FD006A1FF2 /* Frameworks */,
 				47DBCF5B1C09A7FD006A1FF2 /* Resources */,
+				B943AB581DBA31EF57A71886 /* Embed Pods Frameworks */,
+				D402E05D44D3FEA2D34336FF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,6 +268,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A3153A1E78E70F4B70DEFA70 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B943AB581DBA31EF57A71886 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cavemen/Pods-Cavemen-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D402E05D44D3FEA2D34336FF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cavemen/Pods-Cavemen-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		47DBCF591C09A7FD006A1FF2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -239,6 +323,7 @@
 			files = (
 				4793F0811C09DA5800CF1EE4 /* JobsListViewController.swift in Sources */,
 				4793F0861C09E3ED00CF1EE4 /* String+Localization.swift in Sources */,
+				EF4187231C0A057F000DF058 /* ScanViewController.swift in Sources */,
 				4793F07C1C09D64C00CF1EE4 /* Constants.swift in Sources */,
 				47DBCF741C09B17B006A1FF2 /* ProjectsListViewController.swift in Sources */,
 				47DBCF611C09A7FD006A1FF2 /* AppDelegate.swift in Sources */,
@@ -361,6 +446,7 @@
 		};
 		47DBCF701C09A7FD006A1FF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94B2786A732CA923E9FD655B /* Pods-Cavemen.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -375,6 +461,7 @@
 		};
 		47DBCF711C09A7FD006A1FF2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A452D8E613C6E2BC4145F027 /* Pods-Cavemen.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
