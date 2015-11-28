@@ -7,14 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4793F07C1C09D64C00CF1EE4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4793F07B1C09D64C00CF1EE4 /* Constants.swift */; };
 		47DBCF611C09A7FD006A1FF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DBCF601C09A7FD006A1FF2 /* AppDelegate.swift */; };
 		47DBCF631C09A7FD006A1FF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DBCF621C09A7FD006A1FF2 /* ViewController.swift */; };
 		47DBCF661C09A7FD006A1FF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47DBCF641C09A7FD006A1FF2 /* Main.storyboard */; };
 		47DBCF681C09A7FD006A1FF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47DBCF671C09A7FD006A1FF2 /* Assets.xcassets */; };
 		47DBCF6B1C09A7FD006A1FF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47DBCF691C09A7FD006A1FF2 /* LaunchScreen.storyboard */; };
+		47DBCF741C09B17B006A1FF2 /* ProjectsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DBCF731C09B17B006A1FF2 /* ProjectsListViewController.swift */; };
+		47DBCF771C09B382006A1FF2 /* ProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DBCF761C09B382006A1FF2 /* ProjectTableViewCell.swift */; };
+		47DBCF7A1C09B492006A1FF2 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DBCF791C09B492006A1FF2 /* CoreDataManager.swift */; };
+		47DBCF7C1C09B49E006A1FF2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47DBCF7B1C09B49E006A1FF2 /* CoreData.framework */; };
+		47DBCFA11C09B7A9006A1FF2 /* CavemanDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 47DBCF9F1C09B7A9006A1FF2 /* CavemanDB.xcdatamodeld */; };
+		47DBCFAC1C09C366006A1FF2 /* Project+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DBCFA51C09C366006A1FF2 /* Project+CoreDataProperties.m */; };
+		47DBCFAD1C09C366006A1FF2 /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DBCFA71C09C366006A1FF2 /* Project.m */; };
+		47DBCFAE1C09C366006A1FF2 /* Job+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DBCFA91C09C366006A1FF2 /* Job+CoreDataProperties.m */; };
+		47DBCFAF1C09C366006A1FF2 /* Job.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DBCFAB1C09C366006A1FF2 /* Job.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4793F07B1C09D64C00CF1EE4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		47DBCF5D1C09A7FD006A1FF2 /* Cavemen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cavemen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47DBCF601C09A7FD006A1FF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47DBCF621C09A7FD006A1FF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +33,20 @@
 		47DBCF671C09A7FD006A1FF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47DBCF6A1C09A7FD006A1FF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47DBCF6C1C09A7FD006A1FF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47DBCF731C09B17B006A1FF2 /* ProjectsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectsListViewController.swift; path = ViewControllers/ProjectsListViewController.swift; sourceTree = "<group>"; };
+		47DBCF761C09B382006A1FF2 /* ProjectTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectTableViewCell.swift; path = Cells/ProjectTableViewCell.swift; sourceTree = "<group>"; };
+		47DBCF791C09B492006A1FF2 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		47DBCF7B1C09B49E006A1FF2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		47DBCFA01C09B7A9006A1FF2 /* CavemanDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CavemanDB.xcdatamodel; sourceTree = "<group>"; };
+		47DBCFA31C09C35E006A1FF2 /* Cavemen-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cavemen-Bridging-Header.h"; sourceTree = "<group>"; };
+		47DBCFA41C09C366006A1FF2 /* Project+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Project+CoreDataProperties.h"; path = "Models/Project+CoreDataProperties.h"; sourceTree = "<group>"; };
+		47DBCFA51C09C366006A1FF2 /* Project+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Project+CoreDataProperties.m"; path = "Models/Project+CoreDataProperties.m"; sourceTree = "<group>"; };
+		47DBCFA61C09C366006A1FF2 /* Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Project.h; path = Models/Project.h; sourceTree = "<group>"; };
+		47DBCFA71C09C366006A1FF2 /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Project.m; path = Models/Project.m; sourceTree = "<group>"; };
+		47DBCFA81C09C366006A1FF2 /* Job+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Job+CoreDataProperties.h"; path = "Models/Job+CoreDataProperties.h"; sourceTree = "<group>"; };
+		47DBCFA91C09C366006A1FF2 /* Job+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Job+CoreDataProperties.m"; path = "Models/Job+CoreDataProperties.m"; sourceTree = "<group>"; };
+		47DBCFAA1C09C366006A1FF2 /* Job.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Job.h; path = Models/Job.h; sourceTree = "<group>"; };
+		47DBCFAB1C09C366006A1FF2 /* Job.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Job.m; path = Models/Job.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47DBCF7C1C09B49E006A1FF2 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +64,7 @@
 		47DBCF541C09A7FD006A1FF2 = {
 			isa = PBXGroup;
 			children = (
+				47DBCF7D1C09B4A2006A1FF2 /* Frameworks */,
 				47DBCF5F1C09A7FD006A1FF2 /* Cavemen */,
 				47DBCF5E1C09A7FD006A1FF2 /* Products */,
 			);
@@ -54,14 +81,68 @@
 		47DBCF5F1C09A7FD006A1FF2 /* Cavemen */ = {
 			isa = PBXGroup;
 			children = (
+				47DBCF781C09B46F006A1FF2 /* CoreData */,
+				47DBCF751C09B35B006A1FF2 /* Cells */,
+				47DBCF721C09B136006A1FF2 /* ViewControllers */,
 				47DBCF601C09A7FD006A1FF2 /* AppDelegate.swift */,
-				47DBCF621C09A7FD006A1FF2 /* ViewController.swift */,
 				47DBCF641C09A7FD006A1FF2 /* Main.storyboard */,
 				47DBCF671C09A7FD006A1FF2 /* Assets.xcassets */,
 				47DBCF691C09A7FD006A1FF2 /* LaunchScreen.storyboard */,
 				47DBCF6C1C09A7FD006A1FF2 /* Info.plist */,
+				4793F07B1C09D64C00CF1EE4 /* Constants.swift */,
 			);
 			path = Cavemen;
+			sourceTree = "<group>";
+		};
+		47DBCF721C09B136006A1FF2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				47DBCF621C09A7FD006A1FF2 /* ViewController.swift */,
+				47DBCF731C09B17B006A1FF2 /* ProjectsListViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		47DBCF751C09B35B006A1FF2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				47DBCF761C09B382006A1FF2 /* ProjectTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		47DBCF781C09B46F006A1FF2 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				47DBCFA21C09C346006A1FF2 /* Models */,
+				47DBCF791C09B492006A1FF2 /* CoreDataManager.swift */,
+				47DBCF9F1C09B7A9006A1FF2 /* CavemanDB.xcdatamodeld */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		47DBCF7D1C09B4A2006A1FF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47DBCF7B1C09B49E006A1FF2 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		47DBCFA21C09C346006A1FF2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				47DBCFA41C09C366006A1FF2 /* Project+CoreDataProperties.h */,
+				47DBCFA51C09C366006A1FF2 /* Project+CoreDataProperties.m */,
+				47DBCFA61C09C366006A1FF2 /* Project.h */,
+				47DBCFA71C09C366006A1FF2 /* Project.m */,
+				47DBCFA81C09C366006A1FF2 /* Job+CoreDataProperties.h */,
+				47DBCFA91C09C366006A1FF2 /* Job+CoreDataProperties.m */,
+				47DBCFAA1C09C366006A1FF2 /* Job.h */,
+				47DBCFAB1C09C366006A1FF2 /* Job.m */,
+				47DBCFA31C09C35E006A1FF2 /* Cavemen-Bridging-Header.h */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +217,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				47DBCF631C09A7FD006A1FF2 /* ViewController.swift in Sources */,
+				4793F07C1C09D64C00CF1EE4 /* Constants.swift in Sources */,
+				47DBCF741C09B17B006A1FF2 /* ProjectsListViewController.swift in Sources */,
 				47DBCF611C09A7FD006A1FF2 /* AppDelegate.swift in Sources */,
+				47DBCFAD1C09C366006A1FF2 /* Project.m in Sources */,
+				47DBCFA11C09B7A9006A1FF2 /* CavemanDB.xcdatamodeld in Sources */,
+				47DBCFAF1C09C366006A1FF2 /* Job.m in Sources */,
+				47DBCF7A1C09B492006A1FF2 /* CoreDataManager.swift in Sources */,
+				47DBCFAE1C09C366006A1FF2 /* Job+CoreDataProperties.m in Sources */,
+				47DBCF771C09B382006A1FF2 /* ProjectTableViewCell.swift in Sources */,
+				47DBCFAC1C09C366006A1FF2 /* Project+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,10 +339,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Cavemen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.endava.Cavemen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cavemen/Cavemen-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -260,10 +353,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Cavemen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.endava.Cavemen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cavemen/Cavemen-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -286,8 +381,22 @@
 				47DBCF711C09A7FD006A1FF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		47DBCF9F1C09B7A9006A1FF2 /* CavemanDB.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				47DBCFA01C09B7A9006A1FF2 /* CavemanDB.xcdatamodel */,
+			);
+			currentVersion = 47DBCFA01C09B7A9006A1FF2 /* CavemanDB.xcdatamodel */;
+			path = CavemanDB.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 47DBCF551C09A7FD006A1FF2 /* Project object */;
 }
