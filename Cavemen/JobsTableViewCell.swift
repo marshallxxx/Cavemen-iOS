@@ -1,5 +1,5 @@
 //
-//  ProjectTableViewCell.swift
+//  JobTableViewCell.swift
 //  Cavemen
 //
 //  Created by Evghenii Nicolaev on 11/28/15.
@@ -8,12 +8,12 @@
 
 import UIKit
 
-class ProjectTableViewCell: UITableViewCell {
+class JobTableViewCell: UITableViewCell {
 
-    var projectName:String?
+    var jobName:String?
     
     func updateCellDetails() {
-        textLabel?.text = projectName
+        textLabel?.text = jobName
     }
-
+    
 }

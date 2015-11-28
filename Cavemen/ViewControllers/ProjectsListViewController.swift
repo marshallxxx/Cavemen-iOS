@@ -16,9 +16,14 @@ class ProjectsListViewController: UIViewController, UITableViewDataSource, UITab
     
     var projectsFetchController: NSFetchedResultsController!
     
+    var projectSelected: Project?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //Localization
+        noProjectsLabel.text = "No projects".localized
+        
         // Initialize Fetched Controller
         let sortDescriptor = NSSortDescriptor(key: "name", ascending: true)
         let request = NSFetchRequest(entityName: DBEntities.Projects.getEntityName())
@@ -57,24 +62,36 @@ class ProjectsListViewController: UIViewController, UITableViewDataSource, UITab
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let project = projectsFetchController.objectAtIndexPath(indexPath) as! Project
         let cell = projectListTableView.dequeueReusableCellWithIdentifier(TableViewCells.ProjectCell.rawValue, forIndexPath: indexPath) as! ProjectTableViewCell
+        
         cell.projectName = project.name
         cell.updateCellDetails()
         
-        return ProjectTableViewCell()
+        return cell
     }
     
     // MARK: - UITableViewDelegate
 
-    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-        
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        projectSelected = projectsFetchController.objectAtIndexPath(indexPath) as? Project
+        performSegueWithIdentifier(Segues.ToJobs.rawValue, sender: self)
     }
     
     // MARK: Navigation
     
-    override func performSegueWithIdentifier(identifier: String, sender: AnyObject?) {
-        
-        
-        
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        switch segue.identifier! {
+        case Segues.ToJobs.rawValue:
+            
+            guard let jobsVC = segue.destinationViewController as? JobsViewControllerProtocol else {
+                break
+            }
+            
+            jobsVC.project = projectSelected
+            
+        default:
+            break
+        }
     }
     
     // MARK: - NSFetchedResultsControllerDelegate

@@ -8,8 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		4793F07C1C09D64C00CF1EE4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4793F07B1C09D64C00CF1EE4 /* Constants.swift */; };
+		4793F07F1C09D9E000CF1EE4 /* ViewControllerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4793F07E1C09D9E000CF1EE4 /* ViewControllerProtocols.swift */; };
+		4793F0811C09DA5800CF1EE4 /* JobsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4793F0801C09DA5800CF1EE4 /* JobsListViewController.swift */; };
+		4793F0831C09E25000CF1EE4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4793F0821C09E25000CF1EE4 /* Localizable.strings */; };
+		4793F0861C09E3ED00CF1EE4 /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4793F0851C09E3ED00CF1EE4 /* String+Localization.swift */; };
+		4793F0881C09E62700CF1EE4 /* JobsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4793F0871C09E62700CF1EE4 /* JobsTableViewCell.swift */; };
 		47DBCF611C09A7FD006A1FF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DBCF601C09A7FD006A1FF2 /* AppDelegate.swift */; };
-		47DBCF631C09A7FD006A1FF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DBCF621C09A7FD006A1FF2 /* ViewController.swift */; };
 		47DBCF661C09A7FD006A1FF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47DBCF641C09A7FD006A1FF2 /* Main.storyboard */; };
 		47DBCF681C09A7FD006A1FF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47DBCF671C09A7FD006A1FF2 /* Assets.xcassets */; };
 		47DBCF6B1C09A7FD006A1FF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47DBCF691C09A7FD006A1FF2 /* LaunchScreen.storyboard */; };
@@ -26,9 +30,13 @@
 
 /* Begin PBXFileReference section */
 		4793F07B1C09D64C00CF1EE4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4793F07E1C09D9E000CF1EE4 /* ViewControllerProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerProtocols.swift; sourceTree = "<group>"; };
+		4793F0801C09DA5800CF1EE4 /* JobsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobsListViewController.swift; path = ViewControllers/JobsListViewController.swift; sourceTree = "<group>"; };
+		4793F0821C09E25000CF1EE4 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		4793F0851C09E3ED00CF1EE4 /* String+Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
+		4793F0871C09E62700CF1EE4 /* JobsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobsTableViewCell.swift; sourceTree = "<group>"; };
 		47DBCF5D1C09A7FD006A1FF2 /* Cavemen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cavemen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47DBCF601C09A7FD006A1FF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		47DBCF621C09A7FD006A1FF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		47DBCF651C09A7FD006A1FF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		47DBCF671C09A7FD006A1FF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47DBCF6A1C09A7FD006A1FF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +69,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4793F0841C09E3DE00CF1EE4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4793F0851C09E3ED00CF1EE4 /* String+Localization.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		47DBCF541C09A7FD006A1FF2 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +97,7 @@
 		47DBCF5F1C09A7FD006A1FF2 /* Cavemen */ = {
 			isa = PBXGroup;
 			children = (
+				4793F0841C09E3DE00CF1EE4 /* Extensions */,
 				47DBCF781C09B46F006A1FF2 /* CoreData */,
 				47DBCF751C09B35B006A1FF2 /* Cells */,
 				47DBCF721C09B136006A1FF2 /* ViewControllers */,
@@ -90,6 +107,7 @@
 				47DBCF691C09A7FD006A1FF2 /* LaunchScreen.storyboard */,
 				47DBCF6C1C09A7FD006A1FF2 /* Info.plist */,
 				4793F07B1C09D64C00CF1EE4 /* Constants.swift */,
+				4793F0821C09E25000CF1EE4 /* Localizable.strings */,
 			);
 			path = Cavemen;
 			sourceTree = "<group>";
@@ -97,8 +115,9 @@
 		47DBCF721C09B136006A1FF2 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				47DBCF621C09A7FD006A1FF2 /* ViewController.swift */,
+				4793F07E1C09D9E000CF1EE4 /* ViewControllerProtocols.swift */,
 				47DBCF731C09B17B006A1FF2 /* ProjectsListViewController.swift */,
+				4793F0801C09DA5800CF1EE4 /* JobsListViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -107,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				47DBCF761C09B382006A1FF2 /* ProjectTableViewCell.swift */,
+				4793F0871C09E62700CF1EE4 /* JobsTableViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -204,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47DBCF6B1C09A7FD006A1FF2 /* LaunchScreen.storyboard in Resources */,
+				4793F0831C09E25000CF1EE4 /* Localizable.strings in Resources */,
 				47DBCF681C09A7FD006A1FF2 /* Assets.xcassets in Resources */,
 				47DBCF661C09A7FD006A1FF2 /* Main.storyboard in Resources */,
 			);
@@ -216,14 +237,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47DBCF631C09A7FD006A1FF2 /* ViewController.swift in Sources */,
+				4793F0811C09DA5800CF1EE4 /* JobsListViewController.swift in Sources */,
+				4793F0861C09E3ED00CF1EE4 /* String+Localization.swift in Sources */,
 				4793F07C1C09D64C00CF1EE4 /* Constants.swift in Sources */,
 				47DBCF741C09B17B006A1FF2 /* ProjectsListViewController.swift in Sources */,
 				47DBCF611C09A7FD006A1FF2 /* AppDelegate.swift in Sources */,
+				4793F0881C09E62700CF1EE4 /* JobsTableViewCell.swift in Sources */,
 				47DBCFAD1C09C366006A1FF2 /* Project.m in Sources */,
 				47DBCFA11C09B7A9006A1FF2 /* CavemanDB.xcdatamodeld in Sources */,
 				47DBCFAF1C09C366006A1FF2 /* Job.m in Sources */,
 				47DBCF7A1C09B492006A1FF2 /* CoreDataManager.swift in Sources */,
+				4793F07F1C09D9E000CF1EE4 /* ViewControllerProtocols.swift in Sources */,
 				47DBCFAE1C09C366006A1FF2 /* Job+CoreDataProperties.m in Sources */,
 				47DBCF771C09B382006A1FF2 /* ProjectTableViewCell.swift in Sources */,
 				47DBCFAC1C09C366006A1FF2 /* Project+CoreDataProperties.m in Sources */,

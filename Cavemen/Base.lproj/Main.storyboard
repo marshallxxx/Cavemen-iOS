@@ -44,7 +44,7 @@
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ProjectTableViewCell" selectionStyle="default" indentationWidth="10" textLabel="dX3-NX-be3" style="IBUITableViewCellStyleDefault" id="V2r-ux-a3H" customClass="ProjectTableViewCell" customModule="Cavemen" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ProjectTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProjectTableViewCell" textLabel="dX3-NX-be3" style="IBUITableViewCellStyleDefault" id="V2r-ux-a3H" customClass="ProjectTableViewCell" customModule="Cavemen" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="V2r-ux-a3H" id="H6C-ob-x5Q">
@@ -60,9 +60,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="DpD-HS-HMP" kind="show" id="VCY-fj-hGd"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -87,16 +84,17 @@
                     <connections>
                         <outlet property="noProjectsLabel" destination="IN0-Kt-5It" id="li1-sM-NFH"/>
                         <outlet property="projectListTableView" destination="Heg-Z0-iAm" id="E31-PG-Lh1"/>
+                        <segue destination="DpD-HS-HMP" kind="show" identifier="toJobsSegue" id="f2c-2L-Ja6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wr4-xT-fwj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="304" y="52"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Jobs List View Controller-->
         <scene sceneID="ZpT-RQ-Tr8">
             <objects>
-                <tableViewController id="DpD-HS-HMP" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="JobsListViewController" id="DpD-HS-HMP" customClass="JobsListViewController" customModule="Cavemen" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Dgs-pP-PoH">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -122,7 +120,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2op-Zs-y2R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1042" y="-227"/>
+            <point key="canvasLocation" x="1062" y="-242"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="3Ry-3Y-mxn">

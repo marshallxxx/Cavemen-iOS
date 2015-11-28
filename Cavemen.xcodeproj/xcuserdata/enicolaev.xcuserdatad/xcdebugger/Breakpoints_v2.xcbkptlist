@@ -24,11 +24,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cavemen/ViewControllers/ProjectsListViewController.swift"
-            timestampString = "470407090.192837"
+            timestampString = "470410302.760035"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
             landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -40,11 +40,293 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cavemen/ViewControllers/ProjectsListViewController.swift"
-            timestampString = "470406418.451424"
+            timestampString = "470410302.760035"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cavemen/ViewControllers/ProjectsListViewController.swift"
+            timestampString = "470408498.109619"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "ProjectsListViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Cavemen.ProjectsListViewController.projectListTableView.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITableView&gt;"
+                  moduleName = "Cavemen"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/enicolaev/Documents/Cavemen/Cavemen/ViewControllers/ProjectsListViewController.swift"
+                  timestampString = "470408498.112971"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Cavemen.ProjectsListViewController.projectListTableView.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITableView&gt;"
+                  moduleName = "Cavemen"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/enicolaev/Documents/Cavemen/Cavemen/ViewControllers/ProjectsListViewController.swift"
+                  timestampString = "470408498.113262"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Cavemen.ProjectsListViewController.projectListTableView.materializeForSet : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITableView&gt;"
+                  moduleName = "Cavemen"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/enicolaev/Documents/Cavemen/Cavemen/ViewControllers/ProjectsListViewController.swift"
+                  timestampString = "470408498.113471"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Cavemen.ProjectsListViewController.init (Cavemen.ProjectsListViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; Cavemen.ProjectsListViewController"
+                  moduleName = "Cavemen"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/enicolaev/Documents/Cavemen/Cavemen/ViewControllers/ProjectsListViewController.swift"
+                  timestampString = "470408498.113685"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "159">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Cavemen.ProjectsListViewController.init (Cavemen.ProjectsListViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Cavemen.ProjectsListViewController&gt;"
+                  moduleName = "Cavemen"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/enicolaev/Documents/Cavemen/Cavemen/ViewControllers/ProjectsListViewController.swift"
+                  timestampString = "470408498.113904"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "88">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cavemen/ViewControllers/ProjectsListViewController.swift"
+            timestampString = "470408499.053746"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "ProjectsListViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Cavemen.ProjectsListViewController.projectsFetchController.getter : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.NSFetchedResultsController&gt;"
+                  moduleName = "Cavemen"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/enicolaev/Documents/Cavemen/Cavemen/ViewControllers/ProjectsListViewController.swift"
+                  timestampString = "470408499.057087"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Cavemen.ProjectsListViewController.projectsFetchController.setter : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.NSFetchedResultsController&gt;"
+                  moduleName = "Cavemen"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/enicolaev/Documents/Cavemen/Cavemen/ViewControllers/ProjectsListViewController.swift"
+                  timestampString = "470408499.057372"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Cavemen.ProjectsListViewController.projectsFetchController.materializeForSet : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.NSFetchedResultsController&gt;"
+                  moduleName = "Cavemen"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/enicolaev/Documents/Cavemen/Cavemen/ViewControllers/ProjectsListViewController.swift"
+                  timestampString = "470408499.057587"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Cavemen.ProjectsListViewController.init (Cavemen.ProjectsListViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; Cavemen.ProjectsListViewController"
+                  moduleName = "Cavemen"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/enicolaev/Documents/Cavemen/Cavemen/ViewControllers/ProjectsListViewController.swift"
+                  timestampString = "470408499.057811"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "218">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Cavemen.ProjectsListViewController.init (Cavemen.ProjectsListViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Cavemen.ProjectsListViewController&gt;"
+                  moduleName = "Cavemen"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/enicolaev/Documents/Cavemen/Cavemen/ViewControllers/ProjectsListViewController.swift"
+                  timestampString = "470408499.058036"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "138">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cavemen/ViewControllers/ProjectsListViewController.swift"
+            timestampString = "470410302.760035"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "ProjectsListViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cavemen/ViewControllers/ProjectsListViewController.swift"
+            timestampString = "470411705.788172"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "prepareForSegue(_:sender:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cavemen/ViewControllers/ProjectsListViewController.swift"
+            timestampString = "470411705.788172"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "prepareForSegue(_:sender:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cavemen/ViewControllers/JobsListViewController.swift"
+            timestampString = "470411476.407758"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cavemen/ViewControllers/JobsListViewController.swift"
+            timestampString = "470411476.407758"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cavemen/ViewControllers/JobsListViewController.swift"
+            timestampString = "470411476.407758"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>

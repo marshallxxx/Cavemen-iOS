@@ -10,13 +10,14 @@
 //
 
 #import "Project.h"
+#import "Job.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Project (CoreDataProperties)
 
 @property (nullable, nonatomic, retain) NSString *name;
-@property (nullable, nonatomic, retain) NSSet<NSManagedObject *> *jobs;
+@property (nullable, nonatomic, retain) NSSet<Job *> *jobs;
 
 @end
 
