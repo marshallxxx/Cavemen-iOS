@@ -3,3 +3,4 @@
 //
 #import "Project.h"
 #import "Job.h"
+#import "ZBarSDK.h"

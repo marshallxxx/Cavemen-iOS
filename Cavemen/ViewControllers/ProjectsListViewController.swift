@@ -80,7 +80,11 @@ class ProjectsListViewController: UIViewController, UITableViewDataSource, UITab
     // MARK: Navigation
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        switch segue.identifier! {
+      guard let strIdentifier = segue.identifier else {
+        return
+      }
+      
+        switch strIdentifier {
         case Segues.ToJobs.rawValue:
             
             guard let jobsVC = segue.destinationViewController as? JobsViewControllerProtocol else {
