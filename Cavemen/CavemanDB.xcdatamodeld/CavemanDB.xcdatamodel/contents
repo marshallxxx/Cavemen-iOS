@@ -9,7 +9,7 @@
         <relationship name="jobs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Job" inverseName="project" inverseEntity="Job" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Project" positionX="-63" positionY="-18" width="128" height="75"/>
         <element name="Job" positionX="-54" positionY="-9" width="128" height="75"/>
+        <element name="Project" positionX="-63" positionY="-18" width="128" height="75"/>
     </elements>
 </model>
