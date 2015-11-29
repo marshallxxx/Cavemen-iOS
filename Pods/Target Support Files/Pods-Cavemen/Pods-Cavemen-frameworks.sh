@@ -82,3 +82,14 @@ strip_invalid_archs() {
   fi
 }
 
+
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-Cavemen/SDWebImage.framework"
+  install_framework "Pods-Cavemen/SwiftyJSON.framework"
+  install_framework "Pods-Cavemen/ZBarSDK.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-Cavemen/SDWebImage.framework"
+  install_framework "Pods-Cavemen/SwiftyJSON.framework"
+  install_framework "Pods-Cavemen/ZBarSDK.framework"
+fi

@@ -10,10 +10,18 @@ import Foundation
 
 protocol JobsViewControllerProtocol: class {
     var project:Project? { get set }
+    var jobModels:[JobModel]? {get set}
 }
 
 protocol ScanViewControllerProtocol: class {
-    func didScannedQRCode(code: String)
+    func didScannedQRCode(code: NSString)
 }
 
+protocol JobDetailsViewControllerProtocol: class {
+    var jobName:String? {get set}
+    var jobConfig:JobConfig? { get set }
+}
 
+protocol JobMoreInfoViewControllerProtocol: class {
+    var jobName:String? {get set}
+}

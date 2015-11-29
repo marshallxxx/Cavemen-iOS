@@ -17,14 +17,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return CoreDataManager()
     }()
 
+    private var networkMng: NetworkManager?
+    
+    func initializeNetworkManager(endpoint: String) {
+        networkMng = NetworkManager(endpoint: endpoint)
+    }
+    
+    var networkManager: NetworkManager? {
+        return networkMng
+    }
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
-        //coreDataManager.populateDatabaseWithFakes()
+        if let options = launchOptions {
+            if let notificaiton = options[UIApplicationLaunchOptionsRemoteNotificationKey] {
+                print("%@", notificaiton)
+            }
+        }
   
         let types:UIUserNotificationType = ([.Alert, .Sound, .Badge])
         let settings:UIUserNotificationSettings = UIUserNotificationSettings(forTypes: types, categories: nil)
         application.registerUserNotificationSettings(settings)
-//        application.registerForRemoteNotifications()
+
+        if let endpoint = SettingsManager.getEndPoint() {
+            initializeNetworkManager(endpoint)
+        }
+
+        UIApplication.sharedApplication().applicationIconBadgeNumber = 0
         
         return true
     }
@@ -55,6 +74,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
         print("%@", deviceToken)
+        
+        let tokenChars = UnsafePointer<CChar>(deviceToken.bytes)
+        var tokenString = ""
+        
+        for var i = 0; i < deviceToken.length; i++ {
+            tokenString += String(format: "%02.2hhx", arguments: [tokenChars[i]])
+        }
+        
+        SettingsManager.pushToken = tokenString
+        
     }
     
     func application(application: UIApplication, didRegisterUserNotificationSettings notificationSettings: UIUserNotificationSettings) {
@@ -67,7 +96,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("%@", error)
     }
     
-    
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
+        
+        print("%@", userInfo)
+        
+        let message = userInfo["aps"]?["alert"] as? String
+        
+        if let msg = message {
+            let alert = UIAlertController(title: nil, message: msg, preferredStyle: .Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel, handler: nil))
+            (window!.rootViewController! as! UINavigationController).topViewController?.presentViewController(alert, animated: true, completion: nil)
+        }
+        
+    }
 
 }
 

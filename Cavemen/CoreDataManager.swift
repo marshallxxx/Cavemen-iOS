@@ -79,6 +79,47 @@ class CoreDataManager {
         }
     }
     
+    // MARK: Enteties
+    
+    func saveProject(projectName: String) -> Bool {
+        
+        let request = NSFetchRequest(entityName: DBEntities.Projects.getEntityName())
+        let predicate = NSPredicate(format: "name == %@", projectName)
+        request.predicate = predicate
+        
+        let results = try! managedObjectContext.executeFetchRequest(request)
+        
+        if results.count > 0 {
+            return false
+        }
+        
+        let project = NSEntityDescription.insertNewObjectForEntityForName(DBEntities.Projects.getEntityName(), inManagedObjectContext: managedObjectContext) as! Project
+        project.name = projectName
+        saveContext()
+        
+        return true
+    }
+    
+    func removeProject(projectName: String) {
+        let request = NSFetchRequest(entityName: DBEntities.Projects.getEntityName())
+        let predicate = NSPredicate(format: "name == %@", projectName)
+        request.predicate = predicate
+        
+        let results:[AnyObject]?
+        
+        do {
+            results = try managedObjectContext.executeFetchRequest(request)
+        } catch {
+            return
+        }
+        
+        if results != nil && results!.count > 0 {
+            managedObjectContext.deleteObject(results![0] as! NSManagedObject)
+            saveContext()
+        }
+
+    }
+    
     //MARK: Fakes
     
     func populateDatabaseWithFakes() {

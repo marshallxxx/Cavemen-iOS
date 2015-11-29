@@ -17,6 +17,17 @@ enum TableViewCells: String {
 enum Segues: String {
     case ToJobs = "toJobsSegue"
     case ToScanner = "toQRScanner"
+    case ToJobDetails = "toJobDetails"
+}
+
+enum NSUserDefaultsValues: String {
+    case EndPoint = "endppppp"
+}
+
+enum EndpointsPath: String {
+    case Projects = "projects"
+    case Jobs = "jobs"
+    case Job = "job"
 }
 
 enum Fonts {
@@ -28,6 +39,8 @@ enum Fonts {
     }
     
 }
+
+let healthURL = "http://rice-group.googlecode.com/svn/com.fh/target/jenkins-for-test/images/32x32/"
 
 enum Colors {
     case Color1
