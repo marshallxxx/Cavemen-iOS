@@ -31,6 +31,7 @@
 		47DBCFAD1C09C366006A1FF2 /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DBCFA71C09C366006A1FF2 /* Project.m */; };
 		47DBCFAE1C09C366006A1FF2 /* Job+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DBCFA91C09C366006A1FF2 /* Job+CoreDataProperties.m */; };
 		47DBCFAF1C09C366006A1FF2 /* Job.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DBCFAB1C09C366006A1FF2 /* Job.m */; };
+		47F0EF311C0C3C67009A8738 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F0EF301C0C3C67009A8738 /* Models.swift */; };
 		7527317DBAEE59AB14AA1A66 /* Pods_Cavemen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ACDB8C35A904E842F586967 /* Pods_Cavemen.framework */; };
 		EF4187231C0A057F000DF058 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4187221C0A057F000DF058 /* ScanViewController.swift */; };
 /* End PBXBuildFile section */
@@ -68,6 +69,7 @@
 		47DBCFA91C09C366006A1FF2 /* Job+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Job+CoreDataProperties.m"; path = "Models/Job+CoreDataProperties.m"; sourceTree = "<group>"; };
 		47DBCFAA1C09C366006A1FF2 /* Job.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Job.h; path = Models/Job.h; sourceTree = "<group>"; };
 		47DBCFAB1C09C366006A1FF2 /* Job.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Job.m; path = Models/Job.m; sourceTree = "<group>"; };
+		47F0EF301C0C3C67009A8738 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		94B2786A732CA923E9FD655B /* Pods-Cavemen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cavemen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cavemen/Pods-Cavemen.debug.xcconfig"; sourceTree = "<group>"; };
 		A452D8E613C6E2BC4145F027 /* Pods-Cavemen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cavemen.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cavemen/Pods-Cavemen.release.xcconfig"; sourceTree = "<group>"; };
 		EF4187221C0A057F000DF058 /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 		47DBCF5F1C09A7FD006A1FF2 /* Cavemen */ = {
 			isa = PBXGroup;
 			children = (
+				47F0EF321C0C3C87009A8738 /* Models */,
 				475AB0731C0A48E7001F5C9F /* Views */,
 				4793F08B1C0A384F00CF1EE4 /* Network */,
 				4793F0841C09E3DE00CF1EE4 /* Extensions */,
@@ -216,6 +219,14 @@
 				47DBCFAA1C09C366006A1FF2 /* Job.h */,
 				47DBCFAB1C09C366006A1FF2 /* Job.m */,
 				47DBCFA31C09C35E006A1FF2 /* Cavemen-Bridging-Header.h */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		47F0EF321C0C3C87009A8738 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				47F0EF301C0C3C67009A8738 /* Models.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -364,6 +375,7 @@
 				475AB07E1C0A8861001F5C9F /* BuildsViewController.swift in Sources */,
 				4793F07C1C09D64C00CF1EE4 /* Constants.swift in Sources */,
 				47DBCF741C09B17B006A1FF2 /* ProjectsListViewController.swift in Sources */,
+				47F0EF311C0C3C67009A8738 /* Models.swift in Sources */,
 				47DBCF611C09A7FD006A1FF2 /* AppDelegate.swift in Sources */,
 				4793F0881C09E62700CF1EE4 /* JobsTableViewCell.swift in Sources */,
 				47DBCFAD1C09C366006A1FF2 /* Project.m in Sources */,

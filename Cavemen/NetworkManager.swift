@@ -14,7 +14,7 @@ class NetworkManager {
     var accessEndpoint:String
     
     init (endpoint:String) {
-        accessEndpoint = "http://172.16.45.33:4444/"//endpoint
+        accessEndpoint = endpoint
     }
     
     func getEnpointFor(path:EndpointsPath) -> String {
@@ -52,12 +52,16 @@ class NetworkManager {
         let request = NSURLRequest(URL: NSURL(string: "\(getEnpointFor(.Jobs))/\(job.stringByReplacingOccurrencesOfString(" ", withString: "%20"))")!)
         
         NSURLSession.sharedSession().dataTaskWithRequest(request) { (data, response, error) -> Void in
-            if error == nil && data != nil {
-                let json = JSON(data: data!)
-                callback(json)
-            }
             
-            callback(nil)
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                if error == nil && data != nil {
+                    let json = JSON(data: data!)
+                    callback(json)
+                }
+                
+                callback(nil)
+            })
+            
         }.resume()
     }
     
@@ -68,14 +72,14 @@ class NetworkManager {
         request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
         
         NSURLSession.sharedSession().dataTaskWithRequest(request) { (data, response, error) -> Void in
-            
-            if error == nil {
-                callback(JSON(data: data!))
-                return
-            }
-            
-            callback(nil)
-            
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                if error == nil {
+                    callback(JSON(data: data!))
+                    return
+                }
+                
+                callback(nil)
+            })
         }.resume()
     }
     
@@ -83,13 +87,14 @@ class NetworkManager {
         let request = NSMutableURLRequest(URL: NSURL(string: "\(getEnpointFor(.Jobs))/\(job.stringByReplacingOccurrencesOfString(" ", withString: "%20"))/config?device=\(SettingsManager.pushToken ?? "")")!)
         
         NSURLSession.sharedSession().dataTaskWithRequest(request) { (data, response, error) -> Void in
-            
-            if error == nil {
-                let response = JSON(data: data!)
-                callback(response)
-            }
-            
-            callback(nil)
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                if error == nil {
+                    let response = JSON(data: data!)
+                    callback(response)
+                }
+                
+                callback(nil)
+            })
         }.resume()
     }
     
@@ -98,14 +103,14 @@ class NetworkManager {
         request.HTTPMethod = "POST"
         
         NSURLSession.sharedSession().dataTaskWithRequest(request) { (data, response, error) -> Void in
-            
-            if error == nil {
-                callback(NSString(data: data!, encoding: NSUTF8StringEncoding))
-                return
-            }
-            
-            callback(nil)
-            
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                if error == nil {
+                    callback(NSString(data: data!, encoding: NSUTF8StringEncoding))
+                    return
+                }
+                
+                callback(nil)
+            });
             }.resume()
     }
     
